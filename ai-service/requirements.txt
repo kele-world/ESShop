@@ -1,0 +1,21 @@
+# ==================== Web 服务 ====================
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.4
+python-dotenv==1.0.1
+
+# ==================== 大模型调用 ====================
+langchain==0.3.14
+langchain-openai==0.2.14
+langchain-community==0.3.14
+
+# ==================== RAG 检索 ====================
+# 向量库（本地持久化，无需额外部署）
+chromadb==1.5.9
+# 调用 Ollama 的 embedding 接口
+requests
+# 同步知识库时需要直连 MySQL
+pymysql
+
+# embedding 默认走本地 Ollama（qwen3-embedding:4b），不引入 torch
+# 使用前请执行: ollama pull qwen3-embedding:4b

@@ -1,0 +1,33 @@
+# Python
+ai-service/venv/
+ai-service/chroma_db/
+ai-service/__pycache__/
+ai-service/.env
+*.pyc
+
+# Java / Maven
+target/
+*.class
+
+# Node
+node_modules/
+dist/
+dist-ssr/
+.vite/
+
+# 运行时上传的图片
+esshop-image/*
+!esshop-image/samples/
+uploads/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 日志
+*.log
